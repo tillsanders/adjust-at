@@ -35,6 +35,7 @@ Great, this should be rather self-explanary. Both closures (above and below) wil
 * `width` – `int`: the breakpoint in px
 * `above` – `function(element)`, optional: to be executed once, whenever `window.width()` passes the breakpoint from left to right
 * `below` – `function(element)`, optional: to be executed once, whenever `window.width()` passes the breakpoint from right to left
+* `both` – `function(element)`, optional: to be executed once, whenever `window.width()` passes the breakpoint in either direction
 * `aboveRepeat` – `function(element)`, optional: to be executed whenever `window.resize` fires and `window.width()` is above the breakpoint
 * `belowRepeat` – `function(element)`, optional: to be executed whenever `window.resize` fires and `window.width()` is below the breakpoint
 
