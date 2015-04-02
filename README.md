@@ -1,4 +1,4 @@
-# adjust-at, Version 0.1.0 (alpha)
+# adjust-at, Version 0.2.0 (alpha)
 
 jQuery-Plugin: Execute custom functions (e.g. layout adjustments, binding events, etc.) above or below a breakpoint – once, or repeatedly.
 
