@@ -1,0 +1,30 @@
+{
+  "name": "adjust-at",
+  "version": "0.2.0",
+  "homepage": "https://github.com/tillsanders/adjust-at",
+  "authors": [
+    "Till Sanders <tillsanders@googlemail.com> (http://www.till-sanders.de)"
+  ],
+  "description": "jQuery-Plugin: Execute custom functions (e.g. layout adjustments, binding events, etc.) above or below a breakpoint – once, or repeatedly.",
+  "main": "jquery.adjust-at.min.js",
+  "moduleType": "globals",
+  "keywords": [
+    "adjust",
+    "breakpoint",
+    "adjust-at",
+    "responsive",
+    "mobile"
+  ],
+  "license": "GPL-2.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "build.sh"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3"
+  }
+}
