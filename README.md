@@ -33,10 +33,12 @@ Great, this should be rather self-explanary. Both closures (above and below) wil
 ### Parameters
 
 * `width` – int: the breakpoint in px
-* `above` – function, optional: to be executed once, whenever `window.width()` passes the breakpoint from left to right
-* `below` – function, optional: to be executed once, whenever `window.width()` passes the breakpoint from right to left
-* `aboveRepeat` – function, optional: to be executed whenever `window.resize` fires and `window.width()` is above the breakpoint
-* `belowRepeat` – function, optional: to be executed whenever `window.resize` fires and `window.width()` is below the breakpoint
+* `above` – function(element), optional: to be executed once, whenever `window.width()` passes the breakpoint from left to right
+* `below` – function(element), optional: to be executed once, whenever `window.width()` passes the breakpoint from right to left
+* `aboveRepeat` – function(element), optional: to be executed whenever `window.resize` fires and `window.width()` is above the breakpoint
+* `belowRepeat` – function(element), optional: to be executed whenever `window.resize` fires and `window.width()` is below the breakpoint
+
+`element`: single element from the jQuery collection, adjust-at is attached to.
 
 ## Status
 
