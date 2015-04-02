@@ -53,6 +53,7 @@ Help and suggestions are highly appreciated!
 ### 0.2.0
 
 * Added `both`-Parameter
+* Added `bower.json` – this is now a bower_component: `adjust-at`
 
 ## License
 
