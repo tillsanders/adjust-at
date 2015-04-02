@@ -46,3 +46,7 @@ This project is under active development. I intend to eventually introduce testi
 Please consider this code to be unstable.
 
 Help and suggestions are highly appreciated!
+
+## License
+
+This plugin is available under the [GPL 2.0 license](https://www.gnu.org/licenses/gpl-2.0.html).

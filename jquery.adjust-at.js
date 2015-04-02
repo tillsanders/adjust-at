@@ -1,4 +1,4 @@
- (function ($) {
+(function ($) {
     $.fn.adjustAt = function(options) {
         var elements = $(this);
         // Default settings merged with received options
