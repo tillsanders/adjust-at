@@ -48,6 +48,12 @@ Please consider this code to be unstable.
 
 Help and suggestions are highly appreciated!
 
+## History
+
+### 0.2.0
+
+* Added `both`-Parameter
+
 ## License
 
 This plugin is available under the [GPL 2.0 license](https://www.gnu.org/licenses/gpl-2.0.html).
