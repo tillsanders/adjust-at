@@ -11,10 +11,10 @@
         }, options);
         // Executes above(), below(), aboveRepeat() and belowRepeat() if necessary
         function adjust(element, force) {
-            if((element.data('last-width') < settings.width || element.data('last-width') === undefined || force) && $('html').width() >= settings.width) {
+            if((element.data('last-width') < settings.width || typeof element.data('last-width') === "undefined" || force) && $('html').width() >= settings.width) {
                 // if width of window is growing, and we passed the breakpoint, execute above()
                 settings.above(element);
-            } else if((element.data('last-width') > settings.width || element.data('last-width') === undefined || force) && $('html').width() <= settings.width) {
+            } else if((element.data('last-width') > settings.width || typeof element.data('last-width') === "undefined" || force) && $('html').width() <= settings.width) {
                 // if width of window is shrinking, and we passed the breakpoint, execute below()
                 settings.below(element);
             }
