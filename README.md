@@ -55,6 +55,10 @@ Help and suggestions are highly appreciated!
 * Added `both`-Parameter
 * Added `bower.json` – this is now a bower_component: `adjust-at`
 
+### 0.1.1
+
+* Fixed bug #5 – `undefined` is not a keyword
+
 ## License
 
 This plugin is available under the [GPL 2.0 license](https://www.gnu.org/licenses/gpl-2.0.html).
