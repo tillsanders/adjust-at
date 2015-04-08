@@ -1,4 +1,4 @@
-# adjust-at, Version 0.1.1 (alpha)
+# adjust-at, Version 0.2.0 (alpha)
 
 jQuery-Plugin: Execute custom functions (e.g. layout adjustments, binding events, etc.) above or below a breakpoint – once, or repeatedly.
 
@@ -12,17 +12,16 @@ Demonstration: So, we have this element, and we want it to be hidden above 1000p
 
 ```javascript
 $('.hidethissometimes').adjustAt({
-    width: 1000,
-    above: function(element) {
+    above1000: function(element) {
         element.hide();
     },
-    below: function(element) {
+    below1000: function(element) {
         element.show();
     }
 });
 ```
 
-Great, this should be rather self-explanary. Both closures (above and below) will only be fired once :) Performance, bitch!
+Great, this should be rather self-explanary. Both closures will only be fired once :) Performance, bitch!
 
 ## Documentation
 
@@ -32,20 +31,35 @@ Great, this should be rather self-explanary. Both closures (above and below) wil
 
 ### Parameters
 
-* `width` – `int`: the breakpoint in px
-* `above` – `function(element)`, optional: to be executed once, whenever `window.width()` passes the breakpoint from left to right
-* `below` – `function(element)`, optional: to be executed once, whenever `window.width()` passes the breakpoint from right to left
-* `aboveRepeat` – `function(element)`, optional: to be executed whenever `window.resize` fires and `window.width()` is above the breakpoint
-* `belowRepeat` – `function(element)`, optional: to be executed whenever `window.resize` fires and `window.width()` is below the breakpoint
+* `aboveX` – `function(element)`, optional: to be executed once, whenever `window.width()` passes the breakpoint from left to right
+* `belowX` – `function(element)`, optional: to be executed once, whenever `window.width()` passes the breakpoint from right to left
+* `bothX` – `function(element)`, optional: to be executed once, whenever `window.width()` passes the breakpoint in either direction
+* `repeatAboveX` – `function(element)`, optional: to be executed whenever `window.resize` fires and `window.width()` is above the breakpoint
+* `repeatBelowX` – `function(element)`, optional: to be executed whenever `window.resize` fires and `window.width()` is below the breakpoint
 
+`X`: Breakpoint width in pixel.
 `element`: single element from the jQuery collection, adjust-at is attached to.
 
 ## Status
 
-This project is under active development. I intend to eventually introduce testing, bower, et cetera.
+This project is under active development. I intend to eventually introduce testing, et cetera.
 Please consider this code to be unstable.
 
 Help and suggestions are highly appreciated!
+
+## History
+
+### 0.2.0
+
+* Obsoleted `width`-Parameter. The Breakpoint is now part of the array key/parameter. E.g. `above1000`.
+* Renamed: `aboveRepeat` -> `repeatAbove`
+* Renamed: `belowRepeat` -> `repeatBelow`
+* Added `both`-Parameter
+* Added `bower.json` – this is now a bower_component: `adjust-at`
+
+### 0.1.1
+
+* Fixed bug #5 – `undefined` is not a keyword
 
 ## License
 
