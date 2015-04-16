@@ -23,6 +23,8 @@ $('.hidethissometimes').adjustAt({
 
 Great, this should be rather self-explanary. Both closures will only be fired once :) Performance, bitch!
 
+**Demo**: https://jsfiddle.net/kvjne3ft/
+
 ## Documentation
 
 ### Methods
